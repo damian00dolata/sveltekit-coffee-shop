@@ -1,38 +1,19 @@
-# sv
+# coffee-shop
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Włączanie aplikacji
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+W folderze html-templates/svelte-app
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+npm i
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Pełna inicjalizacja bazy przy pierwszym włączaniu może wymagać ponownego uruchomienia.
 
-To create a production version of your app:
-
-```bash
-npm run build
+W svelte-app należy dodać plik .env:
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+AUTH_SECRET=38395907aa41f56120c43cee09d8de5a6ce8197691fbfb0fe02f3b904c606d43
+VITE_PUBLIC_API_URL=http://localhost:5173
+ADMIN_EMAIL=user@gmail.com
+ADMIN_PASSWORD=user123123
+```
